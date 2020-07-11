@@ -1,0 +1,33 @@
+html, body{
+    height: 100%;
+    font-size: medium;
+}
+
+#cover{
+    background: #222 url('img/man_woman_dog_big.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.bg-dark{
+    opacity: 0.9;
+    padding: 2rem;
+    display: table-row-group;
+    align-items: flex-end;
+}
+
+.bg-light{
+    opacity: 0.9;
+    padding: 0.8rem;
+}
+
+.text-primary{
+    color: darkgreen !important;
+}
+
+h3{
+    color: #52361b;
+}
