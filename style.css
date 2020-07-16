@@ -1,6 +1,10 @@
 html, body{
     height: 100%;
     font-size: medium;
+    background-color: rgb(233, 233, 233);
+    margin: 0;
+    padding: 0;
+    color: darkgreen;
 }
 
 #cover{
@@ -12,11 +16,11 @@ html, body{
     align-items: center;
 }
 
-.bg-dark{
+.bg-description{
+    background-color: #343a40;
+    color: white;
     opacity: 0.9;
-    padding: 2rem;
-    display: table-row-group;
-    align-items: flex-end;
+    padding: 2rem;    
 }
 
 .bg-light{
@@ -28,6 +32,36 @@ html, body{
     color: darkgreen !important;
 }
 
-h3{
+h2, h3{
     color: #52361b;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.bg-dark{
+    background-color: darkgreen !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: rgb(216, 226, 190);
+    border-right: rgb(0, 85, 0) 1px dotted !important;
+    border-left: rgb(0, 85, 0) 1px dotted !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-user{
+    color: rgb(221, 221, 221);
+    text-align: center;
+    max-width: 125px;
+    margin-right: 0;
+}
+
+article{
+    padding-top: 55px;
 }

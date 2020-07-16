@@ -57,20 +57,20 @@
  
 .icon-calendar:before { content: '\e800';} /* '' */
 .icon-mail:before { content: '\e801'; font-size: 1.1rem;} /* '' */
-.icon-dollar:before { content: '\e802'; } /* '' */
+.icon-dollar:before { content: '\e802'; font-size: 1.55rem} /* '' */
 .icon-user:before { content: '\e803'; font-size: 1.1rem;} /* '' */
 .icon-lock:before { content: '\e804'; font-size: 1.1rem;} /* '' */
 .icon-cancel:before { content: '\e809'; } /* '' */
-.icon-home:before { content: '\e80a'; } /* '' */
+.icon-home:before { content: '\e80a'; font-size: 1.1rem} /* '' */
 .icon-ok:before { content: '\e80b'; } /* '' */
-.icon-link-ext:before { content: '\f08e'; } /* '' */
+.icon-link-ext:before { content: '\f08e'; font-size: 1.1rem} /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-money:before { content: '\f0d6'; } /* '' */
 .icon-comment:before { content: '\f0e5'; } /* '' */
-.icon-download-cloud:before { content: '\f0ed'; } /* '' */
-.icon-upload-cloud:before { content: '\f0ee'; } /* '' */
+.icon-download-cloud:before { content: '\f0ed'; font-size: 1.1rem} /* '' */
+.icon-upload-cloud:before { content: '\f0ee'; font-size: 1.1rem} /* '' */
 .icon-youtube:before { content: '\f167'; } /* '' */
 .icon-bank:before { content: '\f19c'; } /* '' */
-.icon-sliders:before { content: '\f1de'; } /* '' */
-.icon-chart:before { content: '\f201'; } /* '' */
+.icon-sliders:before { content: '\f1de'; font-size: 1.1rem} /* '' */
+.icon-chart:before { content: '\f201'; font-size: 1.1rem} /* '' */
