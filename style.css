@@ -1,7 +1,7 @@
 html, body{
     height: 100%;
     font-size: medium;
-    background-color: rgb(233, 233, 233); 
+    background-color: rgb(233, 233, 233);
     background-color: transparent;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ html, body{
     background-color: #343a40;
     color: white;
     opacity: 0.9;
-    padding: 2rem;    
+    padding: 2rem;
     -webkit-box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
@@ -126,7 +126,7 @@ legend{
 }
 
 .bg-form{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(215, 215, 215);
     border: #52361b 1px solid;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -137,14 +137,6 @@ legend{
 
 textarea{
     resize: none;
-}
-
-.jumbotron{
-    background-image: url(img/man_woman_dog_big.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100%;
-    margin: 0;
 }
 
 input[type=text]:focus,
@@ -200,7 +192,7 @@ input:focus:-ms-input-placeholder
 /* Checked state */
 .custom-radio .custom-control-input:checked~.custom-control-label::before,
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
-    background-color: darkgreen;  /* green */
+    background-color: darkgreen; 
     background-image: url(xmlns='img/circle-svg.jpg');
     border-radius: 30%;
 }
@@ -211,3 +203,6 @@ input:focus:-ms-input-placeholder
     background-color: rgb(131, 182, 131);
 }
     
+.card{
+    background-color: rgb(215, 215, 215);
+}
