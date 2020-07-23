@@ -41,12 +41,12 @@ html, body{
     color: darkgreen !important;
 }
 
-h3{
+h3, h5{
     color: #52361b;
 }
 
 h2{
-    background-color: rgba(151, 196, 74, 0.3);
+    background-color: rgb(181, 202, 143);
     color: #52361b;
     padding-top: 5px;
     margin-top: 0px;
@@ -60,7 +60,6 @@ hr{
     padding: 0;
     border-color: #52361b;
     width: 98%;
-    
 }
 
 img{
@@ -192,8 +191,7 @@ input:focus:-ms-input-placeholder
 /* Checked state */
 .custom-radio .custom-control-input:checked~.custom-control-label::before,
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
-    background-color: darkgreen; 
-    background-image: url(xmlns='img/circle-svg.jpg');
+    background-color: darkgreen;
     border-radius: 30%;
 }
 
@@ -205,4 +203,54 @@ input:focus:-ms-input-placeholder
     
 .card{
     background-color: rgb(215, 215, 215);
+}
+
+button{
+    background-color: #52361b;
+    color: rgb(0, 153, 0) ;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    background-color: rgb(0, 85, 0);
+}
+
+.dropdown-menu button{
+    background-color: rgb(0, 85, 0);
+    color: rgb(216, 226, 190);
+}
+
+.dropdown-menu button:hover{
+    background-color: rgba(0, 120, 0);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.dropdown-divider{
+    border-top: 1px solid #52361b;
+}
+
+.bg-balance{
+    background-color: transparent;
+    /* background-color: rgb(215, 215, 215); */
+    border: #52361b 1px solid;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    -webkit-box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
+}
+
+.btn-delete{
+    color: red;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-delete:hover{
+   color: rgb(200, 0, 0);
 }
