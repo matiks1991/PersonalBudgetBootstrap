@@ -113,13 +113,22 @@
                   </div>
 
                   <div class="row">
-                     <div id="piechart" class="col "></div>
+                     <div id="piechart" class="col-8 mx-auto"></div>
                   </div>
 
                   <div class="row mt-4">
                      <div id="incomesDetailed" class="col"></div>
                      <div id="expensesDetailed" class="col"></div>
                   </div>
+
+                  <div class="row">
+                     <footer class="col bg-blockquote">
+                       <blockquote>
+                         <p>Kto wydaje więcej niż zarabia, wpada w pułapkę niepotrzebnych zachcianek, z której szybko dostaje się na dno kłopotów i upokorzenia.</p>
+                         <small>Robert Kiyosaki</small>
+                       </blockquote>
+                     </footer>
+                   </div>
 
                </div>
 
@@ -185,6 +194,13 @@
    <script>
       setCurrentDate();
       showCurrentMonth();
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      $(window).resize(function(){
+         drawChart();
+      });
+      
       listeningForElements();
 
    </script>

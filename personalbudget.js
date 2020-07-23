@@ -1,4 +1,4 @@
-var userName = "Mateusz";
+var userName = "Artur";
 
 window.onload = writeUserName;
 
@@ -29,7 +29,6 @@ function showCurrentMonth(){
 	printExpenses();
 	printIncomes();
 	printBalance();
-	// drawChart();
 	printExpensesDetailed();
 	printIncomesDetailed();
 }
@@ -148,12 +147,6 @@ function printBalance()
 	$('#balance').html(div);
 }
 
-
-
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-
 function drawChart(){
 	
 	var data = new google.visualization.DataTable();
@@ -170,16 +163,17 @@ function drawChart(){
 	}
 	
 	var options = {
-		title:'Graficzne przedstawienie Twoich wydatków',
+		title:'Wydatki - graficznie',
 		titleTextStyle:{color:'#52361b', fontSize:20, bold:1},
 		legend: 'none',
-		width:400,
-		height:300,
-		backgroundColor:'rgb(215, 215, 215)',
+		width:'100%',
+		height:330,
+		backgroundColor:'lightgray',
 		sliceVisibilityThreshold:.015,
 		margin:'0px',
 		paddings:'0px',
-		pieHole:0.4
+		pieHole:0.4,
+		borderradius:'20px'
 	};
 
 	var chart = new google.visualization.PieChart(document.getElementById('piechart'));

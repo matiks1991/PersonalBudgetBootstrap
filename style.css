@@ -133,7 +133,7 @@ legend{
     border-top-right-radius: 50px;
     -webkit-box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
-	box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
+    box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
 }
 
 textarea{
@@ -255,4 +255,16 @@ button:hover{
 
 .btn-delete:hover{
    color: rgb(200, 0, 0);
+}
+
+.bg-blockquote{
+    background-color: #343a40;
+    color: white;
+    opacity: 0.9;
+    margin-bottom: 0;
+    padding: 2rem;
+    -webkit-box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
+    box-shadow: 3px 3px 30px -5px rgba(204,204,204,0.9);
+    text-align: justify;
 }
