@@ -9,10 +9,20 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <link rel="shortcut icon" href="img/dollar.png" />
 
-   <!-- <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&display=swap" rel="stylesheet"> -->
+   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="libraries/bootstrap-4.0.0/dist/css/bootstrap.min.css" type="text/css" />
    <link rel="stylesheet" href="fontello-47dae6a1/css/fontello.css" type="text/css" />
    <link rel="stylesheet" href="style.css" type="text/css" />
+
+   <script src="libraries/jquery-3.2.1.slim.min.js"></script>
+   <!-- <script src="libraries/poper.min.js"></script> -->
+   <script src="libraries/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+   <!-- <script src="libraries/jquery.tablesorter.min.js"></script> -->
+   <script src="libraries/loader.js"></script>
+   <!-- <script src="libraries/jquery.tablesorter.min.js"></script> -->
+
+
+   <script src="personalbudget.js"></script>
 
 </head>
 
@@ -51,7 +61,7 @@
             </ul>
 
             <div class="navbar-user ml-auto border my-0 p-2 d-inline-block">
-               <span id="user">Wierzchosława</span>
+               <span class="user">Wierzchosława</span>
             </div>
 
          </div>
@@ -68,7 +78,7 @@
                   <button class="dropdown-item" id="currentYear">Bierzący rok</button>
                   <div class="dropdown-divider"></div>
                   <button class="dropdown-item" type="button" data-toggle="modal"
-                     data-target="#exampleModal">Niestandardowy</button>
+                     data-target="#choosePeriod">Niestandardowy</button>
 
                </div>
             </li>
@@ -87,7 +97,7 @@
 
             <div class="col-lg-8 offset-lg-2 mt-3 bg-balance p-0">
 
-               <h2 id="title" class="text-center">Bilans za miesiąc bieżący</h2>
+               <h2 id="title" class="text-center font-weight-bold">Bilans za miesiąc bieżący</h2>
 
                <hr>
 
@@ -103,7 +113,7 @@
                   </div>
 
                   <div class="row">
-                     <div id="piechart" class="col"></div>
+                     <div id="piechart" class="col "></div>
                   </div>
 
                   <div class="row mt-4">
@@ -120,12 +130,12 @@
    </article>
 
    <section>
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      <div class="modal fade" id="choosePeriod" tabindex="-1" role="dialog" aria-labelledby="choosePeriodLabel"
          aria-hidden="true">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Wybierz zakres dat</h5>
+                  <h5 class="modal-title" id="choosePeriodLabel">Wybierz zakres dat</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                      <span aria-hidden="true">&times;</span>
                   </button>
@@ -169,15 +179,7 @@
    </section>
 
 
-   <script src="libraries/jquery-3.5.1.min.js"></script>
-   <!-- <script src="libraries/poper.min.js"></script> -->
-   <script src="libraries/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
-   <!-- <script src="libraries/jquery.tablesorter.min.js"></script> -->
-   <script src="libraries/loader.js"></script>
-   <!-- <script src="libraries/jquery.tablesorter.min.js"></script> -->
-
-
-   <script src="personalbudget.js"></script>
+   
    
 
    <script>

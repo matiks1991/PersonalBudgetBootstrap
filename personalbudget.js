@@ -1,19 +1,10 @@
 var userName = "Mateusz";
 
-function writeUserName()
-{
-	$('#user').html(userName);
-}
-
 window.onload = writeUserName;
 
-function setCurrentDate()
+function writeUserName()
 {
-	var today = new Date();
-
-	var date = today.toISOString().substr(0, 10);
-	
-	$('#date').val(date);
+	$('.user').html(userName);
 }
 
 function setCurrentDate()
@@ -25,15 +16,22 @@ function setCurrentDate()
 	$('#date').val(date);
 }
 
-//window.onload = showCurrentMonth;
+function setCurrentDate()
+{
+	var today = new Date();
+
+	var date = today.toISOString().substr(0, 10);
+	
+	$('#date').val(date);
+}
 
 function showCurrentMonth(){
 	printExpenses();
 	printIncomes();
 	printBalance();
+	// drawChart();
 	printExpensesDetailed();
 	printIncomesDetailed();
-	drawChart();
 }
 
 function listeningForElements(){
@@ -172,16 +170,16 @@ function drawChart(){
 	}
 	
 	var options = {
-		title:'Twoje wydatki z wybranego okresu',
-		titleTextStyle:{color:'#52361b', fontSize:20, bold:1, textAlign:'center'},
+		title:'Graficzne przedstawienie Twoich wydatków',
+		titleTextStyle:{color:'#52361b', fontSize:20, bold:1},
 		legend: 'none',
-		width:300,
+		width:400,
 		height:300,
 		backgroundColor:'rgb(215, 215, 215)',
 		sliceVisibilityThreshold:.015,
 		margin:'0px',
 		paddings:'0px',
-		pieHole:0.4,
+		pieHole:0.4
 	};
 
 	var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -192,7 +190,7 @@ function printIncomesDetailed()
 {
 	totalIncomes = 0;
 	
-	var div = '<form><table class="table table-sm table-striped table-success text-center"><thead><tr><th scope="col" colspan="6">Szczególowe zestawienie przychodów</th></tr><tr><th scope="col">Lp.</th><th><scope="col">Data</th><th><scope="col">Kwota</th><th><scope="col">Kategoria</th><th scope="col">Komentarz</th><th scope="col">Usuń</th></tr></thead><tbody>';
+	var div = '<form><table class="table table-sm table-striped table-success text-center"><thead><tr><th scope="col" colspan="6">Szczegółowe zestawienie przychodów</th></tr><tr><th scope="col">Lp.</th><th><scope="col">Data</th><th><scope="col">Kwota</th><th><scope="col">Kategoria</th><th scope="col">Komentarz</th><th scope="col">Usuń</th></tr></thead><tbody>';
 	
 	for(i=0; i<incomes.length; i++)
 	{
@@ -208,7 +206,7 @@ function printExpensesDetailed()
 {	
 	totalExpenses = 0;
 	
-	var div =  '<form><table class="table table-sm table-striped table-secondary text-center"><thead><tr><th scope="col" colspan="7">Szczególowe zestawienie wydatków</th></tr><tr><th scope="col">Lp.</th><th><scope="col">Data</th><th><scope="col">Kwota</th><th><scope="col">Sposób płatności</th><th><scope="col">Kategoria</th><th scope="col">Komentarz</th><th scope="col">Usuń</th></tr></thead><tbody>';
+	var div =  '<form><table class="table table-sm table-striped table-secondary text-center"><thead><tr><th scope="col" colspan="7">Szczegółowe zestawienie wydatków</th></tr><tr><th scope="col">Lp.</th><th><scope="col">Data</th><th><scope="col">Kwota</th><th><scope="col">Sposób płatności</th><th><scope="col">Kategoria</th><th scope="col">Komentarz</th><th scope="col">Usuń</th></tr></thead><tbody>';
 	
 	for(i=0; i<expenses.length; i++)
 	{
